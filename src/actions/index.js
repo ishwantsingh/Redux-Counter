@@ -20,6 +20,12 @@ export const decrement = () => ({
   type: DECREMENT
 });
 
+export const incrementIfOdd = () => ({
+  type: "INCREMENT_IF_ODD"
+  // Stretch Problem: Implement an increment function that
+  // only increments if the counter value is odd
+});
+
 //can use this too but is longer :->
 
 // export function mapDispatchToProps(dispatch) {

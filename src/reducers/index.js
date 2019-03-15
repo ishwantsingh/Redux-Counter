@@ -19,6 +19,11 @@ export default (state = initialState.count, action) => {
       return state + 1;
     case DECREMENT:
       return state - 1;
+    case "INCREMENT_IF_ODD":
+      if (Math.floor(state / 2) !== state / 2) {
+        return state + 1;
+      }
+      return state;
     default:
       return state;
   }
